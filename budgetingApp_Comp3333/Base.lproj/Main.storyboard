@@ -8,10 +8,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Item 2-->
+        <!--Add Expense-->
         <scene sceneID="K82-kO-gVq">
             <objects>
-                <viewController id="mYr-nF-yvf" sceneMemberID="viewController">
+                <viewController id="mYr-nF-yvf" customClass="AddNewExpense" customModule="budgetingApp_Comp3333" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="CJT-LL-eum">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -93,6 +93,9 @@
                                     <fontDescription key="titleFontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="16"/>
                                     <color key="baseForegroundColor" red="0.22352941176470587" green="0.49803921568627452" blue="0.42745098039215684" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="foodTapped:" destination="mYr-nF-yvf" eventType="touchUpInside" id="MFS-6n-MFC"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8hb-GM-RDp">
                                 <rect key="frame" x="24" y="663" width="345" height="52"/>
@@ -108,6 +111,9 @@
                                     <fontDescription key="titleFontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="19"/>
                                     <color key="baseForegroundColor" red="0.4548339844" green="0.4548339844" blue="0.4548339844" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="saveExpense:" destination="mYr-nF-yvf" eventType="touchUpInside" id="Xwa-Gq-oUb"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ksn-2a-VeG">
                                 <rect key="frame" x="141.66666666666666" y="338" width="109.66666666666666" height="44"/>
@@ -123,6 +129,9 @@
                                     <fontDescription key="titleFontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="16"/>
                                     <color key="baseForegroundColor" red="0.0" green="0.26666666666666666" blue="0.49803921568627452" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="booksTapped:" destination="mYr-nF-yvf" eventType="touchUpInside" id="UiE-YB-lj2"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kzy-Sp-rCO">
                                 <rect key="frame" x="259.33333333333331" y="338" width="109.66666666666669" height="44"/>
@@ -138,6 +147,9 @@
                                     <fontDescription key="titleFontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="16"/>
                                     <color key="baseForegroundColor" red="0.0" green="0.49803921568627452" blue="0.44705882352941173" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="funTapped:" destination="mYr-nF-yvf" eventType="touchUpInside" id="eCv-Sx-Ush"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jxm-q5-ECC">
                                 <rect key="frame" x="200.66666666666663" y="390" width="168.33333333333337" height="44"/>
@@ -153,6 +165,9 @@
                                     <fontDescription key="titleFontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="16"/>
                                     <color key="baseForegroundColor" red="0.0" green="0.48627450980392156" blue="0.51764705882352935" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="otherTapped:" destination="mYr-nF-yvf" eventType="touchUpInside" id="a7b-gN-rg9"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ijs-rB-VPK">
                                 <rect key="frame" x="24" y="390" width="168.66666666666666" height="44"/>
@@ -168,6 +183,9 @@
                                     <fontDescription key="titleFontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="16"/>
                                     <color key="baseForegroundColor" red="0.13725490196078433" green="0.52549019607843139" blue="0.23921568627450979" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="transportationTapped:" destination="mYr-nF-yvf" eventType="touchUpInside" id="KHA-kz-hXW"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="61a-82-Czc"/>
@@ -211,16 +229,25 @@
                             <constraint firstItem="ijs-rB-VPK" firstAttribute="top" secondItem="qWX-gl-x27" secondAttribute="bottom" constant="8" id="vtU-ap-fkG"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 2" id="DbC-Ye-FiT"/>
+                    <tabBarItem key="tabBarItem" title="Add Expense" image="plus.capsule.fill" catalog="system" id="DbC-Ye-FiT"/>
+                    <connections>
+                        <outlet property="amountInput" destination="qdb-Gj-mvC" id="cY1-ma-0XT"/>
+                        <outlet property="booksButton" destination="ksn-2a-VeG" id="Pc5-jf-cbE"/>
+                        <outlet property="descriptionInput" destination="roB-Wo-dB1" id="NCr-Sp-vYo"/>
+                        <outlet property="foodButton" destination="qWX-gl-x27" id="dJq-pc-IuT"/>
+                        <outlet property="funButton" destination="kzy-Sp-rCO" id="V5X-DG-jM0"/>
+                        <outlet property="otherButton" destination="Jxm-q5-ECC" id="YgI-cO-17H"/>
+                        <outlet property="transportationButton" destination="ijs-rB-VPK" id="1Qs-Si-IZu"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2Mh-ZZ-iAS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-3063.3587786259541" y="1187.323943661972"/>
         </scene>
-        <!--Item-->
+        <!--Set Budget-->
         <scene sceneID="tvF-Qq-jgR">
             <objects>
-                <viewController id="0oT-yF-DLd" sceneMemberID="viewController">
+                <viewController id="0oT-yF-DLd" customClass="MonthlyBudget" customModule="budgetingApp_Comp3333" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="NDx-1U-nDJ">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -289,6 +316,9 @@
                                     <fontDescription key="titleFontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="19"/>
                                     <color key="baseForegroundColor" red="0.4548339844" green="0.4548339844" blue="0.4548339844" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="saveBudget:" destination="0oT-yF-DLd" eventType="touchUpInside" id="zaj-Td-hox"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="B8V-oi-7mr"/>
@@ -308,16 +338,19 @@
                             <constraint firstItem="gq6-sf-cJr" firstAttribute="leading" secondItem="B8V-oi-7mr" secondAttribute="leading" constant="24" id="wyP-QF-IWh"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="1bX-Qy-WQD"/>
+                    <tabBarItem key="tabBarItem" title="Set Budget" image="dollarsign.gauge.chart.lefthalf.righthalf" catalog="system" id="1bX-Qy-WQD"/>
+                    <connections>
+                        <outlet property="budgetInput" destination="Mq0-l8-2dc" id="BpS-7a-D6h"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="b2z-9I-qDn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1753.4351145038167" y="1186.6197183098593"/>
         </scene>
-        <!--Item 1-->
+        <!--Dashboard-->
         <scene sceneID="RKJ-Yh-3eI">
             <objects>
-                <viewController id="0DW-9U-OmU" sceneMemberID="viewController">
+                <viewController id="0DW-9U-OmU" customClass="Dashboard" customModule="budgetingApp_Comp3333" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="HAT-ay-wqP">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -560,7 +593,18 @@
                             <constraint firstItem="zMt-Nj-w6q" firstAttribute="top" secondItem="U28-dd-Y1o" secondAttribute="bottom" constant="8" id="vn1-oY-BCJ"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 1" id="3cg-6i-qWp"/>
+                    <tabBarItem key="tabBarItem" title="Dashboard" image="house.fill" catalog="system" id="3cg-6i-qWp"/>
+                    <connections>
+                        <outlet property="booksLabel" destination="miW-pf-TmW" id="BE6-kB-gRB"/>
+                        <outlet property="budgetLabel" destination="s9A-kT-oUy" id="PKq-ld-5UK"/>
+                        <outlet property="foodLabel" destination="zMt-Nj-w6q" id="dnp-YX-gco"/>
+                        <outlet property="funLabel" destination="gmF-t0-US9" id="387-gl-3hp"/>
+                        <outlet property="ltsLabel" destination="gsO-Un-CaX" id="d8f-WH-Atu"/>
+                        <outlet property="otherLabel" destination="6gs-EB-AUc" id="L2R-BH-9IG"/>
+                        <outlet property="spentLabel" destination="hC8-HW-xZp" id="hQg-S8-hCy"/>
+                        <outlet property="trackingLabel" destination="gr5-20-Fss" id="7Nk-6R-QeQ"/>
+                        <outlet property="transportationLabel" destination="uRq-Bl-obE" id="LSS-IK-K2Y"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Tzx-IF-Ayy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -587,6 +631,9 @@
         </scene>
     </scenes>
     <resources>
+        <image name="dollarsign.gauge.chart.lefthalf.righthalf" catalog="system" width="128" height="105"/>
+        <image name="house.fill" catalog="system" width="128" height="104"/>
+        <image name="plus.capsule.fill" catalog="system" width="128" height="96"/>
         <systemColor name="systemGray5Color">
             <color red="0.8980392157" green="0.8980392157" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
