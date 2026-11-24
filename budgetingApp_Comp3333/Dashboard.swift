@@ -32,7 +32,7 @@ class Dashboard: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        //Uodate values on screen
+        //Update values on screen
         updateScreen()
     }
     
