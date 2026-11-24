@@ -40,8 +40,7 @@ class AddNewExpense: UIViewController, UITextFieldDelegate {
         present(alertController, animated: true, completion: nil)
     }
     
-    //Changes all buttons to gray so none are selected
-    //FIX COLORING
+    //Changes all buttons to gray so none are shown as selected
     func resetButtons(){
         foodButton.backgroundColor = .darkGray
         booksButton.backgroundColor = .darkGray
@@ -52,29 +51,29 @@ class AddNewExpense: UIViewController, UITextFieldDelegate {
     
     @IBAction func foodTapped(_ sender: Any) {
         resetButtons()
-        foodButton.backgroundColor = .init(red: 0.243, green: 0.533, blue: 0.451, alpha: 0.25)
+        foodButton.backgroundColor = .init(red: 0.243, green: 0.533, blue: 0.451, alpha: 1)
         selectedCategory = "Food"
     }
     @IBAction func booksTapped(_ sender: Any) {
         resetButtons()
-        booksButton.backgroundColor = .init(red: 0, green: 0.533, blue: 1.00, alpha: 0.25)
+        booksButton.backgroundColor = .init(red: 0, green: 0.533, blue: 1.00, alpha: 1)
         selectedCategory = "Books"
     }
     
     @IBAction func funTapped(_ sender: Any) {
         resetButtons()
-        funButton.backgroundColor = .init(red: 0, green: 0.784, blue: 0.702, alpha: 0.25)
+        funButton.backgroundColor = .init(red: 0, green: 0.784, blue: 0.702, alpha: 1)
         selectedCategory = "Fun"
     }
     
     @IBAction func transportationTapped(_ sender: Any) {
         resetButtons()
-        transportationButton.backgroundColor = .init(red: 0.204, green: 0.780, blue: 0.349, alpha: 0.25)
+        transportationButton.backgroundColor = .init(red: 0.204, green: 0.780, blue: 0.349, alpha: 1)
         selectedCategory = "Transportation"
     }
     @IBAction func otherTapped(_ sender: Any) {
         resetButtons()
-        otherButton.backgroundColor = .init(red: 0, green: 0.765, blue: 0.816, alpha: 0.25)
+        otherButton.backgroundColor = .init(red: 0, green: 0.765, blue: 0.816, alpha: 1)
         selectedCategory = "Other"
     }
     @IBAction func saveExpense(_ sender: Any) {

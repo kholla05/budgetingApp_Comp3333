@@ -102,5 +102,8 @@ class Dashboard: UIViewController {
         
     }
     
-
+    @IBAction func refreshButton(_ sender: Any) {
+        updateScreen()
+    }
+    
 }
