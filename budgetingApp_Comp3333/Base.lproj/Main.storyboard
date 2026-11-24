@@ -111,7 +111,7 @@
                                 <buttonConfiguration key="configuration" style="plain">
                                     <backgroundConfiguration key="background">
                                         <color key="backgroundColor" red="0.9995117188" green="0.9995117188" blue="0.9995117188" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        <color key="strokeColor" red="0.5419921875" green="0.5717773438" blue="0.5439453125" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <color key="strokeColor" red="0.54117647058823526" green="0.5725490196078431" blue="0.54509803921568623" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     </backgroundConfiguration>
                                     <attributedString key="attributedTitle">
                                         <fragment content="Save Expense">
@@ -271,14 +271,90 @@
                     <view key="view" contentMode="scaleToFill" id="NDx-1U-nDJ">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R12-8n-cf7">
+                                <rect key="frame" x="24" y="88" width="345" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="gCP-fp-kVp"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment content="Monthly Budget">
+                                        <attributes>
+                                            <font key="NSFont" size="36" name="Arial-BoldMT"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="831-AA-lo8">
+                                <rect key="frame" x="24" y="148" width="345" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="4yh-TQ-KKe"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment content="Enter your monthly budget:">
+                                        <attributes>
+                                            <font key="NSFont" size="17" name="ArialMT"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="EX: 800" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Mq0-l8-2dc">
+                                <rect key="frame" x="24" y="178" width="345" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="QPU-az-LCx"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gq6-sf-cJr">
+                                <rect key="frame" x="24" y="663" width="345" height="52"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="52" id="EG5-KG-hBF"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <backgroundConfiguration key="background">
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <color key="strokeColor" red="0.6318359375" green="0.65625" blue="0.6342773438" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </backgroundConfiguration>
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Save Budget">
+                                            <attributes>
+                                                <color key="NSColor" red="0.4548339844" green="0.4548339844" blue="0.4548339844" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <font key="NSFont" size="19" name="HelveticaNeue-Medium"/>
+                                                <font key="NSOriginalFont" size="12" name="Helvetica"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </buttonConfiguration>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="B8V-oi-7mr"/>
                         <color key="backgroundColor" systemColor="systemGray5Color"/>
+                        <constraints>
+                            <constraint firstItem="B8V-oi-7mr" firstAttribute="trailing" secondItem="Mq0-l8-2dc" secondAttribute="trailing" constant="24" id="1Lo-Y9-BC6"/>
+                            <constraint firstItem="B8V-oi-7mr" firstAttribute="bottom" secondItem="gq6-sf-cJr" secondAttribute="bottom" constant="20" id="BW8-AO-jGw"/>
+                            <constraint firstItem="B8V-oi-7mr" firstAttribute="trailing" secondItem="831-AA-lo8" secondAttribute="trailing" constant="24" id="Hq7-E6-NvY"/>
+                            <constraint firstItem="R12-8n-cf7" firstAttribute="leading" secondItem="B8V-oi-7mr" secondAttribute="leading" constant="24" id="NqY-gZ-lD7"/>
+                            <constraint firstItem="B8V-oi-7mr" firstAttribute="trailing" secondItem="gq6-sf-cJr" secondAttribute="trailing" constant="24" id="TjJ-uX-mdU"/>
+                            <constraint firstItem="831-AA-lo8" firstAttribute="leading" secondItem="B8V-oi-7mr" secondAttribute="leading" constant="24" id="UZc-up-mMi"/>
+                            <constraint firstItem="Mq0-l8-2dc" firstAttribute="top" secondItem="831-AA-lo8" secondAttribute="bottom" constant="10" id="aW1-8n-TTv"/>
+                            <constraint firstItem="831-AA-lo8" firstAttribute="top" secondItem="B8V-oi-7mr" secondAttribute="top" constant="30" id="ich-QU-3Pg"/>
+                            <constraint firstItem="Mq0-l8-2dc" firstAttribute="leading" secondItem="B8V-oi-7mr" secondAttribute="leading" constant="24" id="jU7-cV-2PG"/>
+                            <constraint firstItem="R12-8n-cf7" firstAttribute="top" secondItem="NDx-1U-nDJ" secondAttribute="top" constant="88" id="qCV-JV-ZHm"/>
+                            <constraint firstItem="B8V-oi-7mr" firstAttribute="trailing" secondItem="R12-8n-cf7" secondAttribute="trailing" constant="24" id="wka-wq-RXa"/>
+                            <constraint firstItem="gq6-sf-cJr" firstAttribute="leading" secondItem="B8V-oi-7mr" secondAttribute="leading" constant="24" id="wyP-QF-IWh"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" id="1bX-Qy-WQD"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="b2z-9I-qDn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1752" y="1187"/>
+            <point key="canvasLocation" x="-1753.4351145038167" y="1186.6197183098593"/>
         </scene>
         <!--Item 1-->
         <scene sceneID="RKJ-Yh-3eI">
