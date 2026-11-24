@@ -85,43 +85,28 @@
                                     <constraint firstAttribute="height" constant="44" id="9Lb-Bs-d3v"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain">
+                                <buttonConfiguration key="configuration" style="plain" title="Food">
                                     <backgroundConfiguration key="background">
                                         <color key="backgroundColor" red="0.24313725490196078" green="0.53333333333333333" blue="0.45098039215686275" alpha="0.25" colorSpace="custom" customColorSpace="displayP3"/>
                                         <color key="strokeColor" red="0.51364234330000003" green="0.5327148438" blue="0.50156513849999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     </backgroundConfiguration>
-                                    <attributedString key="attributedTitle">
-                                        <fragment content="Food">
-                                            <attributes>
-                                                <color key="NSColor" red="0.22527472527472525" green="0.5" blue="0.42554851324032977" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                <font key="NSFont" size="16" name="HelveticaNeue-Medium"/>
-                                                <font key="NSOriginalFont" size="12" name="Helvetica"/>
-                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                            </attributes>
-                                        </fragment>
-                                    </attributedString>
+                                    <fontDescription key="titleFontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="16"/>
+                                    <color key="baseForegroundColor" red="0.22352941176470587" green="0.49803921568627452" blue="0.42745098039215684" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </buttonConfiguration>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8hb-GM-RDp">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8hb-GM-RDp">
                                 <rect key="frame" x="24" y="663" width="345" height="52"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="52" id="fMQ-km-ud5"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain">
+                                <buttonConfiguration key="configuration" style="plain" title="Save Expense">
                                     <backgroundConfiguration key="background">
                                         <color key="backgroundColor" red="0.9995117188" green="0.9995117188" blue="0.9995117188" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <color key="strokeColor" red="0.54117647058823526" green="0.5725490196078431" blue="0.54509803921568623" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     </backgroundConfiguration>
-                                    <attributedString key="attributedTitle">
-                                        <fragment content="Save Expense">
-                                            <attributes>
-                                                <color key="NSColor" red="0.45652343750000002" green="0.45652343750000002" blue="0.45652343750000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                <font key="NSFont" size="20" name="HelveticaNeue-Medium"/>
-                                                <font key="NSOriginalFont" size="12" name="Helvetica"/>
-                                            </attributes>
-                                        </fragment>
-                                    </attributedString>
+                                    <fontDescription key="titleFontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="19"/>
+                                    <color key="baseForegroundColor" red="0.4548339844" green="0.4548339844" blue="0.4548339844" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </buttonConfiguration>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ksn-2a-VeG">
@@ -130,21 +115,13 @@
                                     <constraint firstAttribute="height" constant="44" id="zMk-zt-Yvm"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain">
+                                <buttonConfiguration key="configuration" style="plain" title="Books">
                                     <backgroundConfiguration key="background">
                                         <color key="backgroundColor" red="0.0" green="0.53333333329999999" blue="1" alpha="0.25" colorSpace="custom" customColorSpace="sRGB"/>
                                         <color key="strokeColor" red="0.51364234330000003" green="0.5327148438" blue="0.50156513849999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     </backgroundConfiguration>
-                                    <attributedString key="attributedTitle">
-                                        <fragment content="Books">
-                                            <attributes>
-                                                <color key="NSColor" red="0.0" green="0.26698139829688028" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                <font key="NSFont" size="16" name="HelveticaNeue-Medium"/>
-                                                <font key="NSOriginalFont" size="12" name="Helvetica"/>
-                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                            </attributes>
-                                        </fragment>
-                                    </attributedString>
+                                    <fontDescription key="titleFontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="16"/>
+                                    <color key="baseForegroundColor" red="0.0" green="0.26666666666666666" blue="0.49803921568627452" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </buttonConfiguration>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kzy-Sp-rCO">
@@ -153,21 +130,13 @@
                                     <constraint firstAttribute="height" constant="44" id="FnV-2R-hkf"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain">
+                                <buttonConfiguration key="configuration" style="plain" title="Fun">
                                     <backgroundConfiguration key="background">
                                         <color key="backgroundColor" red="0.0" green="0.7843137255" blue="0.70196078429999997" alpha="0.25" colorSpace="custom" customColorSpace="sRGB"/>
                                         <color key="strokeColor" red="0.51364234330000003" green="0.5327148438" blue="0.50156513849999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     </backgroundConfiguration>
-                                    <attributedString key="attributedTitle">
-                                        <fragment content="Fun">
-                                            <attributes>
-                                                <color key="NSColor" red="0.0" green="0.5" blue="0.44774102125415705" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                <font key="NSFont" size="16" name="HelveticaNeue-Medium"/>
-                                                <font key="NSOriginalFont" size="12" name="Helvetica"/>
-                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                            </attributes>
-                                        </fragment>
-                                    </attributedString>
+                                    <fontDescription key="titleFontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="16"/>
+                                    <color key="baseForegroundColor" red="0.0" green="0.49803921568627452" blue="0.44705882352941173" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </buttonConfiguration>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jxm-q5-ECC">
@@ -176,21 +145,13 @@
                                     <constraint firstAttribute="height" constant="44" id="JNZ-AG-fY2"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain">
+                                <buttonConfiguration key="configuration" style="plain" title="Other">
                                     <backgroundConfiguration key="background">
                                         <color key="backgroundColor" red="0.0" green="0.76470588240000004" blue="0.81568627449999997" alpha="0.25" colorSpace="custom" customColorSpace="sRGB"/>
                                         <color key="strokeColor" red="0.51364234330000003" green="0.5327148438" blue="0.50156513849999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     </backgroundConfiguration>
-                                    <attributedString key="attributedTitle">
-                                        <fragment content="Other">
-                                            <attributes>
-                                                <color key="NSColor" red="0.0" green="0.48465541010316793" blue="0.51717064950980385" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                <font key="NSFont" size="16" name="HelveticaNeue-Medium"/>
-                                                <font key="NSOriginalFont" size="12" name="Helvetica"/>
-                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                            </attributes>
-                                        </fragment>
-                                    </attributedString>
+                                    <fontDescription key="titleFontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="16"/>
+                                    <color key="baseForegroundColor" red="0.0" green="0.48627450980392156" blue="0.51764705882352935" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </buttonConfiguration>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ijs-rB-VPK">
@@ -199,21 +160,13 @@
                                     <constraint firstAttribute="height" constant="44" id="b7J-ol-INd"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain">
+                                <buttonConfiguration key="configuration" style="plain" title="Transportation">
                                     <backgroundConfiguration key="background">
                                         <color key="backgroundColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="0.25" colorSpace="custom" customColorSpace="sRGB"/>
                                         <color key="strokeColor" red="0.51364234330000003" green="0.5327148438" blue="0.50156513849999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     </backgroundConfiguration>
-                                    <attributedString key="attributedTitle">
-                                        <fragment content="Transportation">
-                                            <attributes>
-                                                <color key="NSColor" red="0.13725618970862041" green="0.52433746936274517" blue="0.23791726480996744" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                <font key="NSFont" size="16" name="HelveticaNeue-Medium"/>
-                                                <font key="NSOriginalFont" size="12" name="Helvetica"/>
-                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                            </attributes>
-                                        </fragment>
-                                    </attributedString>
+                                    <fontDescription key="titleFontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="16"/>
+                                    <color key="baseForegroundColor" red="0.13725490196078433" green="0.52549019607843139" blue="0.23921568627450979" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </buttonConfiguration>
                             </button>
                         </subviews>
@@ -309,17 +262,14 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gq6-sf-cJr">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gq6-sf-cJr">
                                 <rect key="frame" x="24" y="663" width="345" height="52"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="52" id="EG5-KG-hBF"/>
                                 </constraints>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain">
-                                    <backgroundConfiguration key="background">
-                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        <color key="strokeColor" red="0.6318359375" green="0.65625" blue="0.6342773438" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                    </backgroundConfiguration>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Button">
                                     <attributedString key="attributedTitle">
                                         <fragment content="Save Budget">
                                             <attributes>
@@ -330,6 +280,14 @@
                                             </attributes>
                                         </fragment>
                                     </attributedString>
+                                </state>
+                                <buttonConfiguration key="configuration" style="plain" title="Save Budget">
+                                    <backgroundConfiguration key="background">
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <color key="strokeColor" red="0.54117647059999996" green="0.57254901960000004" blue="0.5450980392" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </backgroundConfiguration>
+                                    <fontDescription key="titleFontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="19"/>
+                                    <color key="baseForegroundColor" red="0.4548339844" green="0.4548339844" blue="0.4548339844" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </buttonConfiguration>
                             </button>
                         </subviews>
@@ -343,7 +301,7 @@
                             <constraint firstItem="B8V-oi-7mr" firstAttribute="trailing" secondItem="gq6-sf-cJr" secondAttribute="trailing" constant="24" id="TjJ-uX-mdU"/>
                             <constraint firstItem="831-AA-lo8" firstAttribute="leading" secondItem="B8V-oi-7mr" secondAttribute="leading" constant="24" id="UZc-up-mMi"/>
                             <constraint firstItem="Mq0-l8-2dc" firstAttribute="top" secondItem="831-AA-lo8" secondAttribute="bottom" constant="10" id="aW1-8n-TTv"/>
-                            <constraint firstItem="831-AA-lo8" firstAttribute="top" secondItem="B8V-oi-7mr" secondAttribute="top" constant="30" id="ich-QU-3Pg"/>
+                            <constraint firstItem="831-AA-lo8" firstAttribute="top" secondItem="R12-8n-cf7" secondAttribute="top" constant="60" id="ich-QU-3Pg"/>
                             <constraint firstItem="Mq0-l8-2dc" firstAttribute="leading" secondItem="B8V-oi-7mr" secondAttribute="leading" constant="24" id="jU7-cV-2PG"/>
                             <constraint firstItem="R12-8n-cf7" firstAttribute="top" secondItem="NDx-1U-nDJ" secondAttribute="top" constant="88" id="qCV-JV-ZHm"/>
                             <constraint firstItem="B8V-oi-7mr" firstAttribute="trailing" secondItem="R12-8n-cf7" secondAttribute="trailing" constant="24" id="wka-wq-RXa"/>
