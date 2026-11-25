@@ -5,6 +5,38 @@
 	};
 	objectVersion = 77;
 	objects = {
+		AA0000000000000000000001 = { isa = PBXFileReference; explicitFileType = wrapper.cfbundle; path = budgetingApp_Comp3333Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA0000000000000000000002 = { isa = PBXFileSystemSynchronizedRootGroup; path = budgetingApp_Comp3333Tests; sourceTree = "<group>"; };
+		AA0000000000000000000003 = { isa = PBXSourcesBuildPhase; buildActionMask = 2147483647; files = (); runOnlyForDeploymentPostprocessing = 0; };
+		AA0000000000000000000004 = { isa = PBXFrameworksBuildPhase; buildActionMask = 2147483647; files = (); runOnlyForDeploymentPostprocessing = 0; };
+		AA0000000000000000000005 = { isa = PBXResourcesBuildPhase; buildActionMask = 2147483647; files = (); runOnlyForDeploymentPostprocessing = 0; };
+		AA0000000000000000000006 = { isa = PBXContainerItemProxy; containerPortal = F8A656C130AF8E18003B74F9; proxyType = 1; remoteGlobalIDString = F8A656C830AF8E18003B74F9; remoteInfo = budgetingApp_Comp3333; };
+		AA0000000000000000000007 = { isa = PBXTargetDependency; target = F8A656C830AF8E18003B74F9; targetProxy = AA0000000000000000000006; };
+		AA0000000000000000000008 = { isa = PBXNativeTarget; buildConfigurationList = AA000000000000000000000B; buildPhases = (AA0000000000000000000003, AA0000000000000000000004, AA0000000000000000000005,); buildRules = (); dependencies = (AA0000000000000000000007,); fileSystemSynchronizedGroups = (AA0000000000000000000002,); name = budgetingApp_Comp3333Tests; productName = budgetingApp_Comp3333Tests; productReference = AA0000000000000000000001; productType = "com.apple.product-type.bundle.unit-test"; };
+		AA0000000000000000000009 = { isa = XCBuildConfiguration; buildSettings = {
+ BUNDLE_LOADER = "$(TEST_HOST)";
+ CODE_SIGN_STYLE = Automatic;
+ GENERATE_INFOPLIST_FILE = YES;
+ LD_RUNPATH_SEARCH_PATHS = ("$(inherited)", "@executable_path/Frameworks", "@loader_path/Frameworks",);
+ PRODUCT_BUNDLE_IDENTIFIER = "kieracodes.budgetingApp-Comp3333Tests";
+ PRODUCT_NAME = "$(TARGET_NAME)";
+ SWIFT_VERSION = 5.0;
+ TARGETED_DEVICE_FAMILY = "1,2";
+ TEST_HOST = "$(BUILT_PRODUCTS_DIR)/budgetingApp_Comp3333.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/budgetingApp_Comp3333";
+ }; name = Debug; };
+		AA000000000000000000000A = { isa = XCBuildConfiguration; buildSettings = {
+ BUNDLE_LOADER = "$(TEST_HOST)";
+ CODE_SIGN_STYLE = Automatic;
+ GENERATE_INFOPLIST_FILE = YES;
+ LD_RUNPATH_SEARCH_PATHS = ("$(inherited)", "@executable_path/Frameworks", "@loader_path/Frameworks",);
+ PRODUCT_BUNDLE_IDENTIFIER = "kieracodes.budgetingApp-Comp3333Tests";
+ PRODUCT_NAME = "$(TARGET_NAME)";
+ SWIFT_VERSION = 5.0;
+ TARGETED_DEVICE_FAMILY = "1,2";
+ TEST_HOST = "$(BUILT_PRODUCTS_DIR)/budgetingApp_Comp3333.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/budgetingApp_Comp3333";
+ }; name = Release; };
+		AA000000000000000000000B = { isa = XCConfigurationList; buildConfigurations = (AA0000000000000000000009, AA000000000000000000000A,); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release; };
+
 
 /* Begin PBXFileReference section */
 		F8A656C930AF8E18003B74F9 /* budgetingApp_Comp3333.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = budgetingApp_Comp3333.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -46,6 +78,7 @@
 			isa = PBXGroup;
 			children = (
 				F8A656CB30AF8E18003B74F9 /* budgetingApp_Comp3333 */,
+				AA0000000000000000000002,
 				F8A656CA30AF8E18003B74F9 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -54,6 +87,7 @@
 			isa = PBXGroup;
 			children = (
 				F8A656C930AF8E18003B74F9 /* budgetingApp_Comp3333.app */,
+				AA0000000000000000000001,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -112,6 +146,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
+				AA0000000000000000000008,
 				F8A656C830AF8E18003B74F9 /* budgetingApp_Comp3333 */,
 			);
 		};
