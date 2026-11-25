@@ -26,14 +26,11 @@ class Dashboard: UIViewController {
     @IBOutlet weak var transportationLabel: UILabel!
     @IBOutlet weak var otherLabel: UILabel!
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-        //Update values on screen
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
         updateScreen()
     }
-    
+
     func updateScreen() {
         //Initialize values
         var totalSpent: Float = 0
@@ -66,7 +63,7 @@ class Dashboard: UIViewController {
         let amountLeft = budget - totalSpent
         
         //To track amount and percentage used
-        let percentSpent = totalSpent / budget * 100
+        let percentSpent: Float = budget > 0 ? totalSpent / budget * 100 : 0
         
         //Update labels
         ltsLabel.text = String(format:"$%.2f", amountLeft)
@@ -103,6 +100,23 @@ class Dashboard: UIViewController {
     }
     
     @IBAction func refreshButton(_ sender: Any) {
+        let alert = UIAlertController(
+            title: "Reset Budget?",
+            message: "This will delete your budget and all expenses.",
+            preferredStyle: .alert
+        )
+        alert.addAction(UIAlertAction(title: "Cancel", style: .cancel))
+        alert.addAction(UIAlertAction(title: "Reset", style: .destructive) { [weak self] _ in
+            self?.resetBudget()
+        })
+        present(alert, animated: true)
+    }
+
+    func resetBudget() {
+        budget = 0
+        purchaseNames.removeAll()
+        purchaseAmounts.removeAll()
+        purchaseCategories.removeAll()
         updateScreen()
     }
     
